@@ -50,12 +50,16 @@ function App() {
       <div className="w-[20%] h-[40vh] bg-[#011318] rounded-xl m-4 flex items-center justify-center mt-[170px] sticky top-[170px]">
         <div className="w-[100%] h-[70vh] bg-gray-800 text-white rounded-xl p-6 shadow-lg">
           <div className="flex justify-center mb-4">
-            <div className="w-20 h-20 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full flex items-center justify-center">
-              <User size={32} className="text-white" />
-            </div>
+            <div className="flex justify-center mb-4">
+            <img 
+              src="/Image/2x2-removebg-preview.png" 
+              alt="Profile"
+              className="w-30 h-30 rounded-full object-cover shadow-md"
+            />
           </div>
-          
-          <div className="text-center">
+
+          </div>
+          <div className="text-center mt-auto">
             <h2 className="text-xl font-bold mb-2 text-cyan-300">Engr. Ruzte James Temblor</h2>
             <p className="text-slate-300 text-sm mb-3">B.S Computer Engineering</p>
             <div className="bg-slate-700 rounded-lg p-3">
@@ -104,7 +108,7 @@ function App() {
       <User size={20} />
     </button>
     <span className="absolute left-10 top-1/2 -translate-y-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-10">
-      About Me
+      Character Stats
     </span>
   </div>
 

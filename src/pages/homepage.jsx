@@ -9,7 +9,7 @@ function HomePage() {
           <img 
             src="\Image\2x2-removebg-preview.png"
             alt="Profile"
-            className="w-60 h-60 my-8 rounded-full mx-auto object-cover"
+            className="w-60 h-60 my-8 rounded-full shadow-md mx-auto object-cover"
           />
         <p className="text-base text-white font-normal mt-auto ">
           I am Ruzte James Temblor, a fresh graduate with a bachelors degree in computer engineering,
