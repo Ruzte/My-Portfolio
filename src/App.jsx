@@ -1,4 +1,5 @@
 import { Home, User, Folder, Star, Settings } from 'lucide-react';
+import { MapPin, X, Github, Linkedin, Mail, Phone } from 'lucide-react';
 import { useRef, useEffect, useState } from 'react';
 import HomePage from './pages/homepage.jsx';
 import ProfilePage from './pages/aboutme.jsx';
@@ -35,7 +36,7 @@ function App() {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, );
 
   const scrollToSection = (index) => {
     sectionRefs[index].current?.scrollIntoView({ 
@@ -73,6 +74,12 @@ function App() {
             <div className="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
             <span className="text-xs text-white">Available for work</span>
           </div>
+            <div className="flex justify-center gap-4 mt-4 text-white">
+              <Github className="cursor-pointer hover:text-gray-300" size={20} />
+              <Linkedin className="cursor-pointer hover:text-blue-400" size={20} />
+              <Mail className="cursor-pointer hover:text-red-400" size={20} />
+              <Phone className="cursor-pointer hover:text-green-400" size={20} />
+            </div>
         </div>
       </div>
 
