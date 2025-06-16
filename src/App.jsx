@@ -75,12 +75,51 @@ function App() {
             <span className="text-xs text-white">Available for work</span>
           </div>
             <div className="flex justify-center gap-4 mt-4 text-white">
-              <Github className="cursor-pointer hover:text-gray-300" size={20} />
-              <Linkedin className="cursor-pointer hover:text-blue-400" size={20} />
-              <Mail className="cursor-pointer hover:text-red-400" size={20} />
-              <Phone className="cursor-pointer hover:text-green-400" size={20} />
-            </div>
-        </div>
+  {/* GitHub */}
+  <a 
+    href="https://github.com/Ruzte" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="cursor-pointer hover:text-gray-300 transition-colors"
+  >
+    <Github size={20} />
+  </a>
+  
+  {/* LinkedIn */}
+  <a 
+    href="https://linkedin.com/in/ruzte-temblor-073a952b2" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="cursor-pointer hover:text-blue-400 transition-colors"
+  >
+    <Linkedin size={20} />
+  </a>
+  
+  {/* Email */}
+  <a 
+    href="https://mail.google.com/mail/?view=cm&to=ruztejames.temblor@gmail.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="cursor-pointer hover:text-red-400 transition-colors"
+  >
+    <Mail size={20} />
+  </a>
+  
+  {/* Phone */}
+  <div className="relative group">
+  <Phone 
+    className="cursor-pointer hover:text-green-400 transition-colors" 
+    size={20}
+    onClick={() => {
+      navigator.clipboard.writeText('+63 969 534 3944');  
+    }}
+  />
+  <span className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-10">
+    +63 969 534 3944 (Click to copy)
+  </span>
+</div>
+</div>
+         </div>
       </div>
 
       {/* Vertical Navbar */}
@@ -149,7 +188,7 @@ function App() {
       <Star size={20} />
     </button>
     <span className="absolute left-10 top-1/2 -translate-y-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-10">
-      Interests
+      Tech Stack
     </span>
   </div>
 
@@ -166,7 +205,7 @@ function App() {
       <Settings size={20} />
     </button>
     <span className="absolute left-10 top-1/2 -translate-y-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-10">
-      Settings
+      Under Construction
     </span>
   </div>
 </div>
